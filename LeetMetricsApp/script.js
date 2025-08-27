@@ -18,13 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Username should not be empty");
             return false;
         }
-        const regex = /^[a-zA-Z0-9_-]{1,15}$/;
+        const regex = /^[a-zA-Z0-9_-]{1,20}$/;
         const isValid = regex.test(username);
         if(!isValid) {
             alert("Invalid username");
         }
-        return isValid;
-        
+        return isValid;    
     }
 
     async function fetchUserDetails(username) {
@@ -95,8 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 `
             }
         ).join("");
-
-
     }
     searchButton.addEventListener('click', function() {
         const username = usernameInput.value;
@@ -111,8 +108,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // If the API dosen't work, alternate way is to use a proxy server and use graphql API from leetcode
-        // const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
-            // const targetUrl = 'https://leetcode.com/graphql/';
+        // const proxyUrl = `https://cors-anywhere.herokuapp.com/`
+            // const targetUrl = `https://leetcode.com/graphql/`
 
             // concantenated url : https://cors-anywhere.herokuapp.com/https://leetcode.com/graphql/
 
