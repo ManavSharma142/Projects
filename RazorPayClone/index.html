@@ -453,54 +453,67 @@
         <div class="w-10/12 pt-4 max-w-[1080px] mx-auto relative">
 
             <h2 class="font-mullish font-bold text-center text-2xl leading-[1.2] text-white">Explore Razorpay Business Banking</h2>
-            <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+            <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-20"></div>
 
             <!-- Main feature box -->
             <div class="w-full flex relative min-h-[440px]">
                 <img src="./images/x-flame-1.png" class="absolute -top-[142px] -left-[140px] w-[200px]" loading="lazy">
-                <img src="./images/x-flame-2.png" class="absolute top-[152px] -right-[180px] w-[270px]" loading="lazy" >
+                <img src="./images/x-flame-2.png" class="absolute top-[150px] -right-[180px] w-[270px]" loading="lazy" >
 
                 <!--content Box-->
-                <div>
-                    <!--leftpart-->
-                    <div>
-                        <h3>Manage your company’s finances with
-                            <img src="./images/razorpayX.svg"> 
-                            <span>Business Banking</span>
-                        </h3>
-                        <ul>
-                            <li>
-                                <i data-feather="check" class="text-greenLight"></i>
-                                <span>Open a fully digital current account
-                                </span>
-                            </li>
-                            <li>
-                                <i data-feather="check" class="text-greenLight"></i>
-                                <span>Automate payables & compliment payments</span>
-                            </li>
-                            <li>
-                                <i data-feather="check" class="text-greenLight"></i>
-                                <span>Simplify and track spends with Corporate cards</span>
-                            </li>
-                            <li>
-                                <i data-feather="check" class="text-greenLight"></i>
-                                <span>View financial insights at a glance</span>
-                            </li>
-                        </ul>
+                <div class="w-full  p-10 py-12 bg-[#181c2e] border border-slate-700 z-20 rounded-md ">
+                <!--left-->
+                <div class="flex flex-col justify-between  items-start h-full w-full gap-12 z-20">
+                    <h3 class="font-mullish font-bold text-3xl leading-10 text-white max-w-[500px]">
+                        Manage your company's finances with
+                        <img src="./images/razorpayX.svg" loading="lazy" width="168px" height="32px" class="inline-block"><span class="text-greenLight">Business Banking</span>
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="font-mullish flex items-center space-x-2 text-white">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span> Open a fully digital current account </span>
+                        </li>
+                        <li class="font-mullish flex items-center space-x-2 text-white">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span> Automate Paybles & compliment payments </span>
+                        </li>
+                        <li class="font-mullish flex items-center space-x-2 text-white">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span> Simplify and streamline banking </span>
+                        </li>
+                        <li class="font-mullish flex items-center space-x-2 text-white">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span> View financial insights at a glance </span>
+                        </li>
+                    </ul>
 
-                        <!--button and hyperlink-->
-                        <div>
-                            <button>Sign Up</button>
-                            
-                            <!--hyperlink-->
-                            <div>
-                                <a href="#">Know More</a>
-                                <i data-feather="chevron-right"></i>
-                            </div>
+                    <!--button and hyperlink-->
+                    <div class="flex flex-row  items-center space-x-4 w-full">
+                        <button class="relative flex bg-lightBlue  text-white py-[14px] px-[18px] md:pr-[90px] items-center justify-start rounded-md font-mullish font-bold
+                        hover:bg-lightBlue500 transition-all duration-200">Sign Up
+                            <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex  justify-center items-center">
+                                <svg
+                                viewBox="0 0 24 24"
+                                focusable="false"
+                                class="w-[20px] h-[20px] -skew-x-[20deg]"
+                                >
+                                    <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                                    </path>
+                                </svg>
+                            </div>                        
+                        </button>
+                        
+                        <!--hyperlink-->
+                        <div class="flex flex-row items-center cursor-pointer group ">
+                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More</a>
+                            <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 hover:text-grayBlue transition-all duration-200"></i>
+                        </div>
                     </div>
-                    <!--background image (right part)-->
-                    <img src="./images/buisness-banking.png" alt="">
                 </div>
+                <!--right-->
+                <img src="./images/buisness-banking.png" class="absolute max-w-[500px] right-0 bottom-0  overflow-hidden z-5">
+                </div>
+                
             </div>
         </div>
     </section>
